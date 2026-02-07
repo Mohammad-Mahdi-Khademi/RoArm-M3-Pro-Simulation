@@ -1,0 +1,21 @@
+Webots Project File version R2025a
+perspectives: 000000ff00000000fd00000002000000010000011c000002d1fc0200000001fb0000001400540065007800740045006400690074006f00720000000019000002d10000004000ffffff00000003000007800000017ffc0100000001fb0000001a0043006f006e0073006f006c00650041006c006c0041006c006c010000000000000780000000000000000000000780000003ad00000001000000020000000100000008fc00000000
+simulationViewPerspectives: 000000ff0000000100000002000000000000077e0100000002010000000100
+sceneTreePerspectives: 000000ff000000010000000300000022000001ee000000fa0100000002010000000200
+maximizedDockId: -1
+centralWidgetVisible: 1
+orthographicViewHeight: 1
+textFiles: -1
+renderingDevicePerspectives: Spot:left flank camera;1;0.597222;0;0
+renderingDevicePerspectives: Spot:left head camera;1;0.597222;0;0
+renderingDevicePerspectives: Spot:rear camera;1;0.597222;0;0
+renderingDevicePerspectives: Spot:right flank camera;1;0.597222;0;0
+renderingDevicePerspectives: Spot:right head camera;1;0.597222;0;0
+renderingDevicePerspectives: laptop(1):display;1;1;0;0
+renderingDevicePerspectives: laptop(2):display;1;1;0;0
+renderingDevicePerspectives: laptop(3):display;1;1;0;0
+renderingDevicePerspectives: laptop(4):display;1;1;0;0
+renderingDevicePerspectives: laptop(5):display;1;1;0;0
+renderingDevicePerspectives: laptop(6):display;1;1;0;0
+renderingDevicePerspectives: laptop:display;1;1;0;0
+renderingDevicePerspectives: my_robot:camera;1;0.895833;0;0

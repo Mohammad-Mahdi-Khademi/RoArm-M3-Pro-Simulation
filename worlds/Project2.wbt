@@ -1,0 +1,794 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/abb/irb/protos/Irb4600-40.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/Table.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/OldSteel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/GalvanizedMetal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/ThreadMetalPlate.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/PaintedWood.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/computers/protos/Laptop.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/chairs/protos/OfficeChair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/computers/protos/ComputerMouse.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/humans/pedestrian/protos/Pedestrian.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/drinks/protos/Can.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/PlasticCrate.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Door.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/living_room_furniture/protos/Sofa.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/Desk.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/plants/protos/PottedTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/school_furniture/protos/Clock.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/computers/protos/Monitor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/computers/protos/DesktopComputer.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/computers/protos/Keyboard.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/bathroom/protos/BathroomSink.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/kitchen/fridge/protos/Fridge.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/fruits/protos/FruitBowl.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/fruits/protos/Apple.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/fruits/protos/Orange.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3at.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/devices/nvidia/protos/JetsonNano.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/boston_dynamics/spot/protos/Spot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/boston_dynamics/atlas/protos/Atlas.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/CardboardBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/hospital/protos/MedicineBottle.proto"
+
+WorldInfo {
+  basicTimeStep 16
+  contactProperties [
+    ContactProperties {
+      material1 "gripper1"
+      material2 "plate"
+      coulombFriction [
+        20
+      ]
+      frictionRotation 1 1
+      rollingFriction 1 1 1
+      bounce 0
+      bounceVelocity 0
+    }
+  ]
+}
+Viewpoint {
+  fieldOfView 0.85
+  orientation 0.17595493043425003 -0.156024407774364 -0.9719548583316703 4.561159642890131
+  position 5.227141153154064 -4.8606823086486655 1.7126512399932887
+  follow "robot:IRB 4600/40:solid:solid:solid:solid:solid:solid:pen"
+  followType "Pan and Tilt Shot"
+}
+TexturedBackground {
+  texture "empty_office"
+}
+PointLight {
+  attenuation 0 0 1
+  intensity 10
+  location -5 4 6
+  castShadows TRUE
+}
+Pedestrian {
+  translation -5.9 -2.2 1.27
+  rotation 0 0 1 1.5707903061004251
+  shirtColor 0.666667 1 0
+  pantsColor 0 0 0
+  skinColor 0.803922 0.6 0.564706
+  enableBoundingObject TRUE
+}
+Pedestrian {
+  translation 2.1 2.9 1.37
+  rotation 0 0 1 1.5707903061004251
+  name "pedestrian(1)"
+  shirtColor 0 0.333333 0
+  pantsColor 0.333333 0.666667 1
+  skinColor 0.913725 0.67451 0.643137
+  enableBoundingObject TRUE
+}
+PointLight {
+  attenuation 0 0 1
+  intensity 10
+  location -5 -5 6
+}
+Irb4600-40 {
+  translation -4.84 0 0.74
+  rotation 0 0 1 -1.5708
+  controller "<generic>"
+  supervisor TRUE
+  handSlot [
+    Pen {
+      translation 0 0 0.02
+      rotation 0 1 0 3.14159
+      children [
+        Pose {
+          translation 0 0 0.05
+          children [
+            Shape {
+              appearance BrushedAluminium {
+                colorOverride 0 0.4131074998092622 0.9919279774166476
+              }
+              geometry Cylinder {
+                height 0.05
+                radius 0.04
+                subdivision 24
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0 0.04
+          children [
+            Shape {
+              appearance BrushedAluminium {
+                colorOverride 0 0 0
+              }
+              geometry Cylinder {
+                height 0.07
+                radius 0.01
+                subdivision 12
+              }
+            }
+          ]
+        }
+      ]
+      leadSize 0.01
+      maxDistance 0.05
+      write FALSE
+    }
+  ]
+  staticBase TRUE
+}
+Table {
+  translation -4.84 1 0
+  size 3 3 0.74
+  feetPadding 0.05
+  frameThickness 0.1
+  trayAppearance OldSteel {
+    textureTransform TextureTransform {
+      scale 2 2
+    }
+  }
+  legAppearance GalvanizedMetal {
+  }
+}
+DEF TABLE_WITH_PAPER_SHEET Pose {
+  translation -5.8 -1.1 0
+  children [
+    DEF PAPER Pose {
+      translation 0 0 0.741
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+            }
+            texture ImageTexture {
+              url [
+                "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/worlds/textures/plastic.jpg"
+              ]
+            }
+          }
+          geometry Plane {
+            size 0.8 0.8
+          }
+        }
+      ]
+    }
+    Table {
+      name "table with paper"
+      size 1 1 0.74
+      feetPadding 0.05
+      frameThickness 0.1
+    }
+  ]
+}
+DEF TARGET Solid {
+  translation -5.87 -1.14 1.64
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/TARGET.png"
+          ]
+        }
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.1
+        subdivision 2
+      }
+    }
+  ]
+}
+DEF RoArmTARGET Solid {
+  translation 5 -3.5 1.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/TARGET.png"
+          ]
+        }
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.025
+        subdivision 2
+      }
+    }
+  ]
+  name "solid(1)"
+}
+RectangleArena {
+  translation 0 -4 0
+  floorSize 15 15
+  floorTileSize 1 1
+  floorAppearance ThreadMetalPlate {
+  }
+  wallThickness 0.36
+  wallHeight 4
+  wallAppearance PaintedWood {
+  }
+}
+DEF flacon MedicineBottle {
+  translation 5.18 -3.25 0.981
+  physics Physics {
+    density -1
+    mass 0.1
+  }
+}
+FruitBowl {
+  translation 5.45 1 0.711
+}
+Laptop {
+  translation 7 -5.2 0.741
+  rotation 0 0 1 3.14159
+  name "laptop(1)"
+  controller "<generic>"
+}
+Laptop {
+  translation 3 -6.9 0.741
+  rotation 0 0 1 3.14159
+  name "laptop(3)"
+  controller "<generic>"
+}
+Laptop {
+  translation -1.3 -7 0.741
+  rotation 0 0 1 -5.307179586466759e-06
+  name "laptop(4)"
+  controller "<generic>"
+}
+Laptop {
+  translation -1.2 -5 0.741
+  rotation 0 0 1 -5.307179586466759e-06
+  name "laptop(6)"
+  controller "<generic>"
+}
+Laptop {
+  translation 1.35 -11 0.741
+  rotation 0 0 -1 -1.5707953071795862
+  name "laptop(5)"
+  controller "<generic>"
+}
+Laptop {
+  translation 5.6 -3.2 0.741
+  rotation 0 0 1 -1.5707953071795862
+  name "laptop(2)"
+  controller "<generic>"
+}
+OfficeChair {
+  translation 6 -10.6 0
+  name "office chair(1)"
+}
+OfficeChair {
+  translation 1.4 -10.1 0
+  rotation 0 0 1 -1.5707953071795862
+  name "office chair(8)"
+}
+OfficeChair {
+  translation 6 -8.8 0
+  name "office chair(2)"
+}
+OfficeChair {
+  translation 6 -7 0
+  name "office chair(3)"
+}
+OfficeChair {
+  translation 2 -7 0
+  name "office chair(6)"
+}
+OfficeChair {
+  translation -0.5 -7 0
+  rotation 0 0 1 3.14159
+  name "office chair(7)"
+}
+OfficeChair {
+  translation -0.5 -5 0
+  rotation 0 0 1 3.14159
+  name "office chair(9)"
+}
+OfficeChair {
+  translation 6 -5.2 0
+  name "office chair(4)"
+}
+OfficeChair {
+  translation 5.6 -3.8 0
+  rotation 0 0 1 1.5708
+  name "office chair(5)"
+}
+DesktopComputer {
+  translation 7.1 -7.5 0.741
+}
+DesktopComputer {
+  translation 7.1 -11.4 0.741
+  name "desktop computer(2)"
+}
+DesktopComputer {
+  translation 7.1 -9.4 0.741
+  name "desktop computer(1)"
+}
+PottedTree {
+  translation 7 3 0
+}
+PottedTree {
+  translation 7 -1.5 0
+  name "potted tree(1)"
+}
+Sofa {
+  translation 5.6 3 0
+  rotation 0 0 1 -1.5708003061004252
+}
+Sofa {
+  translation 7 1.6 0
+  rotation 0 0 1 3.14159
+  name "sofa(1)"
+}
+Apple {
+  translation 5.41 0.95 0.781
+}
+Apple {
+  translation 5.41 1.05 0.781
+  name "apple(1)"
+}
+Apple {
+  translation 5.51 1.05 0.781
+  name "apple(2)"
+}
+Apple {
+  translation 5.51 0.95 0.781
+  name "apple(3)"
+}
+Orange {
+  translation 5.53 1 0.861
+}
+Orange {
+  translation 5.46 1.08 0.861
+  name "orange(1)"
+}
+Orange {
+  translation 5.37 0.98 0.861
+  name "orange(2)"
+}
+Sofa {
+  translation 7 -0.2 0
+  rotation 0 0 1 3.14159
+  name "sofa(2)"
+}
+Laptop {
+  translation -3.51 0.1 0.741
+}
+OfficeChair {
+  translation -2.9 0.2 0
+  rotation 0 0 1 -2.6179956132800117
+}
+ComputerMouse {
+  translation -3.45 0.45 0.741
+  rotation 0 0 1 -2.6179956132800117
+}
+Can {
+  translation -3.5 -0.2 0.801
+}
+PlasticCrate {
+  translation -4 -1 0
+}
+PlasticCrate {
+  translation -4.7 -1 0
+  name "plastic crate(1)"
+  color 0.333333 0 1
+}
+Door {
+  translation -5.5 -11.7 0
+  rotation 0 0 1 1.5708
+}
+Table {
+  translation 7 -10.6 0
+  name "table(1)"
+}
+Table {
+  translation 3 -10.6 0
+  name "table(7)"
+}
+Table {
+  translation 1.6 -11 0
+  rotation 0 0 1 1.5708
+  name "table(10)"
+}
+Table {
+  translation 7 -8.8 0
+  name "table(2)"
+}
+Table {
+  translation 3 -8.8 0
+  name "table(8)"
+}
+Table {
+  translation 7 -7 0
+  name "table(3)"
+}
+Table {
+  translation 3 -7 0
+  name "table(9)"
+}
+Table {
+  translation 2 -3 0
+  rotation 0 0 1 -1.5707953071795862
+  name "table(11)"
+}
+Table {
+  translation 0.2 -3 0
+  rotation 0 0 1 -1.5707953071795862
+  name "table(12)"
+}
+Table {
+  translation -1.2 -7 0
+  rotation 0 0 1 1.01503e-06
+  name "table(15)"
+}
+Table {
+  translation -1.2 -5.2 0
+  rotation 0 0 1 1.01503e-06
+  name "table(13)"
+}
+Table {
+  translation -1.2 -3.4 0
+  rotation 0 0 1 1.01503e-06
+  name "table(14)"
+}
+Table {
+  translation 7 -5.2 0
+  name "table(4)"
+}
+Table {
+  translation 7 -3.4 0
+  name "table(5)"
+}
+Table {
+  translation 5.6 -3 0
+  rotation 0 0 1 -1.5707953071795862
+  name "table(6)"
+}
+ComputerMouse {
+  translation 6.7 -9.1 0.741
+  name "computer mouse(1)"
+}
+ComputerMouse {
+  translation 6.7 -11.1 0.741
+  name "computer mouse(2)"
+}
+ComputerMouse {
+  translation 6.7 -7.2 0.741
+  name "computer mouse(3)"
+}
+Keyboard {
+  translation 6.8 -8.8 0.741
+}
+Keyboard {
+  translation 6.8 -10.8 0.741
+  name "keyboard(1)"
+}
+Keyboard {
+  translation 6.8 -6.9 0.741
+  name "keyboard(2)"
+}
+Desk {
+  translation 5.8 1.6 0
+}
+Desk {
+  translation 5.8 0.4 0
+  name "desk(3)"
+}
+Desk {
+  translation 5.1 0.4 0
+  name "desk(4)"
+}
+Desk {
+  translation 5.1 1.6 0
+  name "desk(1)"
+}
+Desk {
+  translation 3.09 3.14 0
+  rotation 0 0 1 -1.5707953071795862
+  name "desk(2)"
+}
+Clock {
+  translation 7.49 -4 2.04
+  rotation 0 0 1 3.14159
+}
+Monitor {
+  translation 7.1 -6.9 0.741
+  rotation 0 0 1 3.141592653589793
+}
+Monitor {
+  translation 7.1 -8.8 0.741
+  rotation 0 0 1 3.141592653589793
+  name "monitor(2)"
+}
+Monitor {
+  translation 7.1 -10.8 0.741
+  rotation 0 0 1 3.141592653589793
+  name "monitor(1)"
+}
+BathroomSink {
+  translation 2.08 3.5 1.04
+  rotation 0 0 -1 1.5708
+}
+Fridge {
+  translation 4.29 3.16 0
+  rotation 0 0 1 -1.5707953071795862
+}
+Pioneer3at {
+  translation 6.91494 -3.74604 0.741
+  rotation 0 0 1 -2.6179953071795863
+}
+JetsonNano {
+  translation 6.83928 -4.8566 0.741
+  rotation 0 0 1 2.0944
+}
+Spot {
+  translation 2.94 -9.02 1.341
+  rotation 0 0 1 1.5708
+  controller "<generic>"
+}
+Atlas {
+  translation 0.94 -3.13 0.87
+  rotation 0 1 0 -1.5707953071795862
+  controller "<generic>"
+}
+DEF RoArm Robot {
+  translation 4.8 -3.25 0.741
+  children [
+    Shape {
+      appearance DEF base_link_material PBRAppearance {
+        baseColor 0.752941 0.752941 0.752941
+        roughness 1
+        metalness 0
+      }
+      geometry DEF base_link Mesh {
+        url [
+          "meshes/base_link.STL"
+        ]
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 0 -1
+        anchor 0.01 0 0.123059
+      }
+      device [
+        RotationalMotor {
+          name "base_link_to_link1"
+          minPosition -3.1416
+          maxPosition 3.1416
+          maxTorque 10000
+        }
+        PositionSensor {
+          name "base_link_to_link1_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.01 0 0.123059
+        rotation 0 0 -1 0
+        children [
+          Shape {
+            appearance DEF link1_material PBRAppearance {
+              baseColor 0.752941 0.752941 0.752941
+              roughness 1
+              metalness 0
+            }
+            geometry DEF link1 Mesh {
+              url [
+                "meshes/link1.STL"
+              ]
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 -1 0
+            }
+            device [
+              RotationalMotor {
+                name "link1_to_link2"
+                minPosition -1.5708
+                maxPosition 1.5708
+                maxTorque 10000
+              }
+              PositionSensor {
+                name "link1_to_link2_sensor"
+              }
+            ]
+            endPoint Solid {
+              rotation -0.5773502691896257 -0.5773502691896257 -0.5773502691896257 2.094395
+              children [
+                Shape {
+                  appearance DEF link2_material PBRAppearance {
+                    baseColor 0.752941 0.752941 0.752941
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry DEF link2 Mesh {
+                    url [
+                      "meshes/link2.STL"
+                    ]
+                  }
+                }
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    axis 0 0 1
+                    anchor 0.236815 0.030002 0
+                  }
+                  device [
+                    RotationalMotor {
+                      name "link2_to_link3"
+                      minPosition -1
+                      maxPosition 3.1416
+                      maxTorque 10000
+                    }
+                    PositionSensor {
+                      name "link2_to_link3_sensor"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.236815 0.030002 0
+                    rotation 0 0 1 1.570796
+                    children [
+                      Camera {
+                        translation 0.0229 -0.2534 0.0137
+                        rotation 0.5773482691869614 -0.5773512691883599 -0.5773512691883599 2.0944
+                        children [
+                          DEF Camera Shape {
+                            appearance PBRAppearance {
+                              baseColor 1 1 0
+                              metalness 0
+                            }
+                            geometry Box {
+                              size 0.02 0.008 0.008
+                            }
+                          }
+                        ]
+                        boundingObject USE Camera
+                        fieldOfView 1.1
+                        width 480
+                        height 480
+                        near 0.001
+                      }
+                      Shape {
+                        appearance DEF link3_material PBRAppearance {
+                          baseColor 0.752941 0.752941 0.752941
+                          roughness 1
+                          metalness 0
+                        }
+                        geometry DEF link3 Mesh {
+                          url [
+                            "meshes/link3.STL"
+                          ]
+                        }
+                      }
+                      HingeJoint {
+                        jointParameters HingeJointParameters {
+                          axis 1 -4e-06 -4e-06
+                          anchor 0.002906 -0.21599 -0.000667
+                        }
+                        device [
+                          RotationalMotor {
+                            name "link3_to_gripper_link"
+                            maxPosition 1.5
+                            maxTorque 10000
+                          }
+                          PositionSensor {
+                            name "link3_to_gripper_link_sensor"
+                          }
+                        ]
+                        endPoint Solid {
+                          translation 0.002906 -0.21599 -0.000667
+                          rotation -0.5773496025226483 0.5773516025212714 -0.5773496025226483 2.094399
+                          children [
+                            Shape {
+                              appearance DEF gripper_link_material PBRAppearance {
+                                baseColor 0.219608 0.219608 0.219608
+                                roughness 1
+                                metalness 0
+                              }
+                              geometry DEF gripper_link Mesh {
+                                url [
+                                  "meshes/gripper_link.STL"
+                                ]
+                              }
+                            }
+                          ]
+                          name "gripper_link"
+                          boundingObject USE gripper_link
+                          physics Physics {
+                            density -1
+                            mass 0.003657
+                            centerOfMass [
+                              0.028886 -0.000777 -0.00078
+                            ]
+                            inertiaMatrix [
+                              1.151393e-06 2.330342e-06 1.471799e-06
+                              1.312504e-07 -2.419545e-13 4.139226e-13
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                    name "link3"
+                    contactMaterial "gripper1"
+                    boundingObject USE link3
+                    physics Physics {
+                      density -1
+                      mass 0.123009
+                      centerOfMass [
+                        -0.000763 -0.11442 -0.000177
+                      ]
+                      inertiaMatrix [
+                        0.0001041119 1.463572e-05 0.0001040093
+                        1.064438e-07 1.549258e-07 -1.643552e-07
+                      ]
+                    }
+                  }
+                }
+              ]
+              name "link2"
+              boundingObject USE link2
+              physics Physics {
+                density -1
+                mass 0.089582
+                centerOfMass [
+                  0.122021 6.6e-05 -9.5e-05
+                ]
+                inertiaMatrix [
+                  2.626935e-05 0.0003503695 0.0003330568
+                  -2.553447e-06 -3.902374e-09 -6.823962e-09
+                ]
+              }
+            }
+          }
+        ]
+        name "link1"
+        boundingObject USE link1
+        physics Physics {
+          density -1
+          mass 0.092889
+          centerOfMass [
+            0 1e-05 -0.014667
+          ]
+          inertiaMatrix [
+            6.09211e-05 2.534936e-05 4.880508e-05
+            -2.792075e-18 4.248417e-15 2.164428e-08
+          ]
+        }
+      }
+    }
+  ]
+  name "my_robot"
+  boundingObject USE base_link
+  controller "RoArm_controller_version_7"
+  controllerArgs [
+    ""
+  ]
+  supervisor TRUE
+}
+CardboardBox {
+  translation 5.2 -3.26 0.84
+  size 0.2 0.2 0.2
+}
